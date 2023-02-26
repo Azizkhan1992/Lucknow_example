@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Spartan-Extrabold";
+  src: url("../assets/Fonts/spartan-extrabold.ttf");
+}
+
+@font-face {
+  font-family: "Spartan-Medium";
+  src: url('../assets/Fonts/spartan-medium.ttf');
+}
+
+@font-face {
+  font-family: "Spartan-Bold";
+  src: url('../assets/Fonts/spartan-bold.ttf');
+}
+
+@font-face {
+  font-family: "Spartan-Semibold";
+  src: url('../assets/Fonts/spartan-semi-bold.ttf');
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url('../assets/Fonts/roboto-medium.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan-Extrabold";
+}
+
+$backC: #eaf1fe;
+$colorBl: #000000;
+$colorGr: #909090;
+$backW: #fff;
+$backR: #ff5454;
+$backDR: #df4545;
+$backPurp: #b080ff;
+$backBl: #80d1ff;
+$backGr: #f3f3f3;
+$backDG: #666666;
+$backFC: #ffd1d1;
+$backCGr: #f2eeee;
+$backCGrey: #f5f6f7;
+$colorGrey: #898686;
+$colorGM: #585858;
+
+.mainLayout {
+  width: 100%;
+  min-height: fit-content;
+  // height: 100vh;
+  min-height: 900px;
+  background: $backC;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.35);
+  padding: 58px 58px 48px 35px;
+  box-sizing: border-box;
+  display: flex;
+  column-gap: 32px;
+}
+
+.descP{
+  font-size: 0.85rem;
+  line-height: 16px;
+  font-family: 'Spartan-Bold';
+  color: $colorBl;
+  font-weight: 700;
+  margin: 0 !important;
+}
+
+.mainPSB{
+  font-size: 0.65rem;
+  line-height: 11px;
+  font-weight: 700;
+  font-family: 'Spartan-Bold';
+  color: $colorBl;
+  margin: 0;
+}
+
+.descPSM{
+  font-size: 0.85rem;
+  line-height: 65px;
+  font-family: 'Spartan-Medium';
+  font-weight: 500;
+  color: $colorGM;
+  margin: 0;
+}
+
+.descPSSB {
+  font-size: 0.85rem;
+  line-height: 16px;
+  font-family: 'Spartan-Semibold';
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  margin: 0;
+  color: $backW;
+}
+
+.miniRM{
+  font-size: 0.65rem;
+  line-height: 12px;
+  font-family: 'Roboto-Medium';
+  font-weight: 500;
+  color: $colorBl;
+}
+
+.mainP {
+  font-size: 0.75rem;
+  line-height: 13px;
+  font-weight: 500;
+  color: $colorBl;
+  margin: 0;
+}
+
+.descPCG {
+  font-size: 0.85rem;
+  line-height: 16px;
+  font-family: 'Extrabold-Medium';
+  font-weight: 500;
+  color: $colorGr;
+  margin: 0;
+}
+
+.descPB {
+  font-size: 0.85rem;
+  line-height: 18px;
+  color: $colorBl;
+  font-weight: 800;
+  margin: 0;
+}
+
+.descPS{
+  font-size: 1.15rem;
+  line-height: 20px;
+  color: $colorBl;
+  margin: 0;
+  font-weight: 800;
+}
+
+.miniPB {
+  font-size: 0.85rem;
+  line-height: 100%;
+  font-weight: 500;
+  color: $colorBl;
+}
+
+.miniP {
+  font-size: 0.75rem;
+  line-height: 11px;
+  font-weight: 700;
+  color: $colorBl;
+}
+
+.miniPSB{
+  font-size: 0.75rem;
+  line-height: 18px;
+  font-family: 'Spartan-Bold';
+  font-weight: 700;
+  color: $colorBl;
+}
+
+.miniPCG {
+  font-size: 0.65rem;
+  line-height: 18px;
+  font-family: 'Spartan-Semibold';
+  font-weight: 600;
+  color: $colorGrey;
+  margin: 0;
+}
+.commonT {
+  font-size: 3rem;
+  line-height: 65px;
+  color: $colorBl;
+  font-weight: 800;
+  margin: 0;
+}
+.commonPSB {
+  font-size: 1.5rem;
+  font-family: 'Spartan-Bold';
+  line-height: 27px;
+  font-weight: 700;
+  color: $backW;
+}
+
+.commonP {
+  font-size: 1.5rem;
+  line-height: 27px;
+  font-weight: 800;
+  color: $colorBl;
+  margin: 0;
+}
+
+.backWBSh {
+  background: $backW;
+  box-shadow: -2px 4px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.backWh {
+  background: $backW;
+}
+.backR {
+  background: $backR;
+}
+.backPurple {
+  background: $backPurp;
+}
+.backBl {
+  background: $backBl;
+}
+.backGr {
+  background: $backGr;
+}
+.backDGr {
+  background: $backDG;
+}
+.backFire {
+  background: $backFC;
+}
+
+.backIG {
+  background: $backCGr;
+}
+.backBlack {
+  background: $colorBl;
+}
+.backCGrey {
+  background: $backCGrey;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mt-42 {
+  margin-top: 42px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.mt-64{
+  margin-top: 64px;
+}
+
+.mt-80{
+  margin-top: 80px;
+}
+
+.mt-96{
+  margin-top: 96px;
+}
+
+.sliceLogoContainer {
+  .descP {
+    color: $backW;
+    margin: 0;
+  }
+}
+
+.iconWr {
+  .icon {
+    svg {
+      path {
+        stroke: $colorGr;
+        fill: $colorGr;
+      }
+    }
+  }
+}
+
+.navItem {
+  p {
+    transition: 0.24s linear;
+  }
+}
+
+.navItem:hover {
+  background: $backR;
+
+  p.descPCG {
+    color: $backW;
+
+    a {
+      color: $backW;
+    }
+  }
+
+  .iconWr {
+    transition: 0.24s linear;
+
+    &.backWh {
+      background: $backDR;
+    }
+
+    .icon {
+      svg {
+        path {
+          stroke: $backW;
+          fill: $backW;
+        }
+      }
+    }
+  }
+}
+
+.itemCart {
+  .icon {
+    svg {
+      path {
+        stroke: $backW;
+        transition: 0.24s linear;
+      }
+    }
+  }
+}
+
+.itemCart:hover {
+  background: $backW;
+  transition: 0.24s linear;
+  border: 1px solid $backDG;
+
+  .icon {
+    svg {
+      path {
+        stroke: $backDG;
+      }
+    }
+  }
+}
+
+.cards-wrapper {
+  .card:hover {
+    width: 100px;
+    height: 160px;
+    background: $backW;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.32s linear;
+  }
+}
+
+@media screen and (max-width: 1198px) and (min-width: 768px) {
+  .mainLayout{
+    height: fit-content !important;
+  }
+}
+
+
+@media screen and (min-width: 1441px) {
+  .commonP{
+    font-size: 3rem;
+  }
+
+  .miniP{
+    font-size: 1rem;
+  }
+
+  .mainP{
+    font-size: 1.5rem !important;
+    line-height: 25px !important;
+  }
+  .miniPCG{
+    font-size: 1rem !important;
+  }
+
+  .navbarContent{
+    margin-top: 42px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .mainLayout{
+    height: fit-content !important;
+  }
+  .commonT{
+    font-size: 1.5rem !important;
+  }
+}
