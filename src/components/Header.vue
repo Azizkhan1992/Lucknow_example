@@ -287,6 +287,7 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
+    padding-top: 12px !important;
 
     &.mobDeactive {
       width: 0;
@@ -312,26 +313,28 @@ export default {
         height: 220px !important;
 
         .miniCircle {
-          top: 2% !important;
+          top: -16% !important;
           left: 6% !important;
         }
 
         .middleCircle {
-          top: 2% !important;
+          top: -18% !important;
         }
 
         .bigCircle {
-          top: -5% !important;
+          width: 64px !important;
+          height: 64px !important;
+          top: -15% !important;
         }
         .middleBlueCircle {
-          top: 24% !important;
+          top: 6% !important;
           left: 52% !important;
         }
 
         img.logoImg {
           width: 100px !important;
           height: 160px !important;
-          top: -32px !important;
+          top: -64px !important;
           left: 64px !important;
           z-index: 0;
         }
@@ -373,6 +376,7 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
+    padding-top: 12px !important;
     z-index: 299;
 
     &.mobDeactive {
@@ -398,26 +402,28 @@ export default {
         height: 220px !important;
 
         .miniCircle {
-          top: 2% !important;
+          top: -12% !important;
           left: 6% !important;
         }
 
         .middleCircle {
-          top: 2% !important;
+          top: -12% !important;
         }
 
         .bigCircle {
-          top: -5% !important;
+          width: 64px !important;
+          height: 64px !important;
+          top: -15% !important;
         }
         .middleBlueCircle {
-          top: 24% !important;
+          top: 6% !important;
           left: 52% !important;
         }
 
         img.logoImg {
           width: 100px !important;
           height: 160px !important;
-          top: -28px !important;
+          top: -64px !important;
           left: 64px !important;
         }
 
