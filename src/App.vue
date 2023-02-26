@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <MainLayout/>
+    <MainLayout />
   </div>
 </template>
 
 <script>
-import MainLayout from './components/layouts/MainLayout.vue';
+import MainLayout from "./components/layouts/MainLayout.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MainLayout
-  }
-}
+    MainLayout,
+  },
+};
 </script>
 
-<style>
-</style>
+<style></style>

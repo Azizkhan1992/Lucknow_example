@@ -1,17 +1,14 @@
 <template>
-    <div class="mainLayout">
+  <div class="mainLayout">
+    <Header />
 
-        
-
-        <Header/>
-
-        <router-view/>
-    </div>
+    <router-view />
+  </div>
 </template>
 <script>
-import Header from '../Header.vue';
-export default{
-    name: 'main-layout',
-    components: {Header}
-}
+import Header from "../Header.vue";
+export default {
+  name: "main-layout",
+  components: { Header },
+};
 </script>

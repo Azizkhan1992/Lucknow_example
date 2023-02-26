@@ -5,22 +5,22 @@
 
 @font-face {
   font-family: "Spartan-Medium";
-  src: url('../assets/Fonts/spartan-medium.ttf');
+  src: url("../assets/Fonts/spartan-medium.ttf");
 }
 
 @font-face {
   font-family: "Spartan-Bold";
-  src: url('../assets/Fonts/spartan-bold.ttf');
+  src: url("../assets/Fonts/spartan-bold.ttf");
 }
 
 @font-face {
   font-family: "Spartan-Semibold";
-  src: url('../assets/Fonts/spartan-semi-bold.ttf');
+  src: url("../assets/Fonts/spartan-semi-bold.ttf");
 }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url('../assets/Fonts/roboto-medium.ttf');
+  src: url("../assets/Fonts/roboto-medium.ttf");
 }
 
 body {
@@ -59,28 +59,28 @@ $colorGM: #585858;
   column-gap: 32px;
 }
 
-.descP{
+.descP {
   font-size: 0.85rem;
   line-height: 16px;
-  font-family: 'Spartan-Bold';
+  font-family: "Spartan-Bold";
   color: $colorBl;
   font-weight: 700;
   margin: 0 !important;
 }
 
-.mainPSB{
+.mainPSB {
   font-size: 0.65rem;
   line-height: 11px;
   font-weight: 700;
-  font-family: 'Spartan-Bold';
+  font-family: "Spartan-Bold";
   color: $colorBl;
   margin: 0;
 }
 
-.descPSM{
+.descPSM {
   font-size: 0.85rem;
   line-height: 65px;
-  font-family: 'Spartan-Medium';
+  font-family: "Spartan-Medium";
   font-weight: 500;
   color: $colorGM;
   margin: 0;
@@ -89,17 +89,17 @@ $colorGM: #585858;
 .descPSSB {
   font-size: 0.85rem;
   line-height: 16px;
-  font-family: 'Spartan-Semibold';
+  font-family: "Spartan-Semibold";
   letter-spacing: 0.04em;
   font-weight: 600;
   margin: 0;
   color: $backW;
 }
 
-.miniRM{
+.miniRM {
   font-size: 0.65rem;
   line-height: 12px;
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   font-weight: 500;
   color: $colorBl;
 }
@@ -115,7 +115,7 @@ $colorGM: #585858;
 .descPCG {
   font-size: 0.85rem;
   line-height: 16px;
-  font-family: 'Extrabold-Medium';
+  font-family: "Extrabold-Medium";
   font-weight: 500;
   color: $colorGr;
   margin: 0;
@@ -129,7 +129,7 @@ $colorGM: #585858;
   margin: 0;
 }
 
-.descPS{
+.descPS {
   font-size: 1.15rem;
   line-height: 20px;
   color: $colorBl;
@@ -151,10 +151,10 @@ $colorGM: #585858;
   color: $colorBl;
 }
 
-.miniPSB{
+.miniPSB {
   font-size: 0.75rem;
   line-height: 18px;
-  font-family: 'Spartan-Bold';
+  font-family: "Spartan-Bold";
   font-weight: 700;
   color: $colorBl;
 }
@@ -162,7 +162,7 @@ $colorGM: #585858;
 .miniPCG {
   font-size: 0.65rem;
   line-height: 18px;
-  font-family: 'Spartan-Semibold';
+  font-family: "Spartan-Semibold";
   font-weight: 600;
   color: $colorGrey;
   margin: 0;
@@ -176,7 +176,7 @@ $colorGM: #585858;
 }
 .commonPSB {
   font-size: 1.5rem;
-  font-family: 'Spartan-Bold';
+  font-family: "Spartan-Bold";
   line-height: 27px;
   font-weight: 700;
   color: $backW;
@@ -239,15 +239,15 @@ $colorGM: #585858;
 .mt-48 {
   margin-top: 48px;
 }
-.mt-64{
+.mt-64 {
   margin-top: 64px;
 }
 
-.mt-80{
+.mt-80 {
   margin-top: 80px;
 }
 
-.mt-96{
+.mt-96 {
   margin-top: 96px;
 }
 
@@ -340,40 +340,38 @@ $colorGM: #585858;
 }
 
 @media screen and (max-width: 1198px) and (min-width: 768px) {
-  .mainLayout{
+  .mainLayout {
     height: fit-content !important;
   }
 }
 
-
 @media screen and (min-width: 1441px) {
-  .commonP{
+  .commonP {
     font-size: 3rem;
   }
 
-  .miniP{
+  .miniP {
     font-size: 1rem;
   }
 
-  .mainP{
+  .mainP {
     font-size: 1.5rem !important;
     line-height: 25px !important;
   }
-  .miniPCG{
+  .miniPCG {
     font-size: 1rem !important;
   }
 
-  .navbarContent{
+  .navbarContent {
     margin-top: 42px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-  .mainLayout{
+  .mainLayout {
     height: fit-content !important;
   }
-  .commonT{
+  .commonT {
     font-size: 1.5rem !important;
   }
 }

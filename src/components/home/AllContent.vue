@@ -192,7 +192,7 @@ export default {
         padding: 0 12px 8px 24px;
         box-sizing: border-box;
 
-        span{
+        span {
           margin-top: 7px;
         }
 
@@ -261,39 +261,34 @@ export default {
   }
 }
 
-@media screen and (min-width: 1441px) {
-  
-}
-
 @media screen and (max-width: 1439px) and (min-width: 1100px) {
-  .allItemsContainer{
-    .ItemsWr{
-
-      .items{
+  .allItemsContainer {
+    .ItemsWr {
+      .items {
         width: 170px !important;
 
-        img.img1{
+        img.img1 {
           width: 180px !important;
           height: 130px !important;
           top: 12px !important;
           left: calc(10% - 16px) !important;
         }
 
-        &.center{
+        &.center {
           width: 180px !important;
         }
 
-        &.item-b{
+        &.item-b {
           bottom: -38px !important;
 
-          img.img1{
+          img.img1 {
             top: -48px !important;
           }
         }
-        &.b-center{
+        &.b-center {
           bottom: -38px !important;
 
-          img.img1{
+          img.img1 {
             top: -48px !important;
             left: 8px !important;
           }
@@ -304,20 +299,19 @@ export default {
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
-  .allItemsContainer{
-
-    .ItemsWr{
-
-      .items{
-
-        &.item-l, &.item-r{
+  .allItemsContainer {
+    .ItemsWr {
+      .items {
+        &.item-l,
+        &.item-r {
           width: 195px !important;
         }
-        &.center{
+        &.center {
           width: 205px !important;
         }
 
-        &.item-b, &.b-center{
+        &.item-b,
+        &.b-center {
           display: none;
         }
       }

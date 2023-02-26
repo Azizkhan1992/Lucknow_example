@@ -1,80 +1,71 @@
 <template>
   <div class="headerContainer" :class="isHeader ? 'mobActive' : 'mobDeactive'">
-
     <button class="navBtn" @click="isHeader = !isHeader">
       <i class="bi bi-list" v-if="isHeader !== true"></i>
       <i class="bi bi-x-lg" v-else></i>
     </button>
 
     <div class="navbarContent">
-
       <div class="navbarLogo">
-      <img src="../assets/images/profile.png" alt="" />
-      <p class="descP">Alka Yagik</p>
-    </div>
+        <img src="../assets/images/profile.png" alt="" />
+        <p class="descP">Alka Yagik</p>
+      </div>
 
-    <div class="navbarContainer">
-      <div class="navbarWr">
-        <div class="navItem" :class="{ active: isRoute == '/' }">
-          <div class="iconWr backWh iconH">
-            <Icons icon="home" />
+      <div class="navbarContainer">
+        <div class="navbarWr">
+          <div class="navItem" :class="{ active: isRoute == '/' }">
+            <div class="iconWr backWh iconH">
+              <Icons icon="home" />
+            </div>
+            <p class="descPCG">
+              <router-link class="descPCG" to="/">Home</router-link>
+            </p>
           </div>
-          <p class="descPCG">
-            <router-link class="descPCG" to="/">Home</router-link>
-          </p>
+          <div class="navItem" :class="{ active: isRoute == '/menu' }">
+            <div class="iconWr backWh iconH">
+              <Icons icon="menu" />
+            </div>
+            <p class="descPCG">
+              <router-link class="descPCG" to="/menu">Menu</router-link>
+            </p>
+          </div>
+          <div class="navItem" :class="{ active: isRoute == '/trend' }">
+            <div class="iconWr backWh iconH">
+              <Icons icon="fire" />
+            </div>
+            <p class="descPCG">
+              <router-link class="descPCG" to="/trend">Trending</router-link>
+            </p>
+          </div>
+          <div class="navItem" :class="{ active: isRoute == '/settings' }">
+            <div class="iconWr backWh iconH">
+              <Icons icon="setting" />
+            </div>
+            <p class="descPCG">
+              <router-link class="descPCG" to="/settings">Settings</router-link>
+            </p>
+          </div>
         </div>
-        <div class="navItem" :class="{ active: isRoute == '/menu' }">
-          <div class="iconWr backWh iconH">
-            <Icons icon="menu" />
-          </div>
-          <p class="descPCG">
-            <router-link class="descPCG" to="/menu">Menu</router-link>
-          </p>
+      </div>
+
+      <div class="navbarLogoItem">
+        <div class="miniCircle backWh"></div>
+        <div class="middleCircle backWh"></div>
+        <div class="bigCircle backPurple">
+          <div class="circleItem backWh"></div>
         </div>
-        <div class="navItem" :class="{ active: isRoute == '/trend' }">
-          <div class="iconWr backWh iconH">
-            <Icons icon="fire" />
+        <div class="middleBlueCircle backBl"></div>
+        <img class="logoImg" src="../assets/images/man.png" alt="" />
+        <div class="logoFloat backWh">
+          <div class="circleRed backR"></div>
+          <p class="descPS">Faster delivery!</p>
+          <div class="logoDesc">
+            <span class="mainPSB">Know More</span>
+            <Icons icon="rightArr" />
           </div>
-          <p class="descPCG">
-            <router-link class="descPCG" to="/trend">Trending</router-link>
-          </p>
-        </div>
-        <div class="navItem" :class="{ active: isRoute == '/settings' }">
-          <div class="iconWr backWh iconH">
-            <Icons icon="setting" />
-          </div>
-          <p class="descPCG">
-            <router-link class="descPCG" to="/settings">Settings</router-link>
-          </p>
         </div>
       </div>
     </div>
-
-    <div class="navbarLogoItem">
-      <div class="miniCircle backWh"></div>
-      <div class="middleCircle backWh"></div>
-      <div class="bigCircle backPurple">
-        <div class="circleItem backWh"></div>
-      </div>
-      <div class="middleBlueCircle backBl"></div>
-      <img class="logoImg" src="../assets/images/man.png" alt="" />
-      <div class="logoFloat backWh">
-        <div class="circleRed backR"></div>
-        <p class="descPS">Faster delivery!</p>
-        <div class="logoDesc">
-          <span class="mainPSB">Know More</span>
-          <!-- <img src="../assets/images/ArrR.png" alt="" /> -->
-          <Icons icon="rightArr"/>
-        </div>
-      </div>
-    </div>
-
-    </div>
-
-
-    
-
-    
   </div>
 </template>
 <script>
@@ -85,7 +76,7 @@ export default {
   data() {
     return {
       isRoute: this.$route.path,
-      isHeader: false
+      isHeader: false,
     };
   },
 };
@@ -102,17 +93,17 @@ export default {
   justify-content: space-between;
   background: transparent !important;
 
-  button.navBtn{
+  button.navBtn {
     display: none;
   }
 
-  .navbarContent{
+  .navbarContent {
     width: 185px;
     display: flex;
     flex-direction: column;
   }
 
-  .container-fluid{
+  .container-fluid {
     flex-direction: column;
     padding: 0 !important;
   }
@@ -289,7 +280,7 @@ export default {
 }
 
 @media screen and (max-width: 1198px) and (min-width: 768px) {
-  .headerContainer{
+  .headerContainer {
     transition: width 0.32s linear;
     height: 100%;
     overflow: hidden;
@@ -297,47 +288,47 @@ export default {
     left: 0;
     top: 0;
 
-    &.mobDeactive{
+    &.mobDeactive {
       width: 0;
       padding: 0;
     }
 
-    &.mobActive{
+    &.mobActive {
       width: 290px;
-      
+
       background: #eaf1fe !important;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       z-index: 299;
     }
 
-    .navbarContent{
+    .navbarContent {
       height: 100%;
       width: calc(100% - 64px);
       padding: 16px;
       box-sizing: border-box;
 
-      .navbarLogoItem{
+      .navbarLogoItem {
         height: 220px !important;
 
-        .miniCircle{
+        .miniCircle {
           top: 2% !important;
           left: 6% !important;
         }
 
-        .middleCircle{
+        .middleCircle {
           top: 2% !important;
         }
 
-        .bigCircle{
+        .bigCircle {
           top: -5% !important;
         }
-        .middleBlueCircle{
+        .middleBlueCircle {
           top: 24% !important;
           left: 52% !important;
         }
 
-        img.logoImg{
+        img.logoImg {
           width: 100px !important;
           height: 160px !important;
           top: -32px !important;
@@ -345,17 +336,17 @@ export default {
           z-index: 0;
         }
 
-        .logoFloat{
+        .logoFloat {
           height: 120px;
         }
       }
 
-      .navbarContainer{
+      .navbarContainer {
         margin-top: 25px !important;
       }
     }
 
-    button.navBtn{
+    button.navBtn {
       display: flex;
       width: 36px;
       height: 28px;
@@ -374,9 +365,8 @@ export default {
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .headerContainer{
+  .headerContainer {
     transition: width 0.32s linear;
     height: 100%;
     overflow: hidden;
@@ -385,63 +375,63 @@ export default {
     top: 0;
     z-index: 299;
 
-    &.mobDeactive{
+    &.mobDeactive {
       width: 0;
       padding: 0;
     }
 
-    &.mobActive{
+    &.mobActive {
       width: 290px;
-      
+
       background: #eaf1fe !important;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
     }
 
-    .navbarContent{
+    .navbarContent {
       height: 100%;
       width: calc(100% - 64px);
       padding: 16px;
       box-sizing: border-box;
 
-      .navbarLogoItem{
+      .navbarLogoItem {
         height: 220px !important;
 
-        .miniCircle{
+        .miniCircle {
           top: 2% !important;
           left: 6% !important;
         }
 
-        .middleCircle{
+        .middleCircle {
           top: 2% !important;
         }
 
-        .bigCircle{
+        .bigCircle {
           top: -5% !important;
         }
-        .middleBlueCircle{
+        .middleBlueCircle {
           top: 24% !important;
           left: 52% !important;
         }
 
-        img.logoImg{
+        img.logoImg {
           width: 100px !important;
           height: 160px !important;
           top: -28px !important;
           left: 64px !important;
         }
 
-        .logoFloat{
+        .logoFloat {
           height: 120px;
         }
       }
 
-      .navbarContainer{
+      .navbarContainer {
         margin-top: 25px !important;
       }
     }
 
-    button.navBtn{
+    button.navBtn {
       display: flex;
       width: 36px;
       height: 28px;
@@ -459,5 +449,4 @@ export default {
     }
   }
 }
-
 </style>
